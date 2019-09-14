@@ -1,1 +1,1 @@
-# ESTUDO DIRIGIDA CURSO NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)
+# ESTUDO DIRIGIDO CURSO NodeJS - The Complete Guide (incl. MVC, REST APIs, GraphQL)
