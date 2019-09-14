@@ -1,7 +1,5 @@
 const express = require("express");
 
-// const bodyParser = require("body-parser");
-
 const app = express();
 
 const users = [];
@@ -17,7 +15,7 @@ app.get("/", (req, res, next) => {
 });
 
 app.get("/users", (req, res, next) => {
-  res.render("users", { pageTitle: "User" });
+  res.render("users", { pageTitle: "User", users });
 });
 
 app.post("/add-user", (req, res, next) => {
