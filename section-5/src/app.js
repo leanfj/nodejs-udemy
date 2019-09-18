@@ -10,7 +10,7 @@ app.use('/adicionar-aparelho', (req, res, next) => {
   );
 });
 
-app.use('/aparelho', (req, res, next) => {
+app.post('/aparelho', (req, res, next) => {
   console.log(req.body);
   res.redirect('/');
 });
