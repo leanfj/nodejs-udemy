@@ -1,0 +1,22 @@
+
+<body>
+    <header>
+        <h1>Shop Express JS</h1>
+        <nav>
+            <ul>
+                <li class="<%= path === '/' ? 'active' : ''  %>">
+                    <a href="/">Shop</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="<%= path === '/admin/add-product' ? 'active' : ''  %>">
+                    <a href="/admin/add-product">Adicionar Produto</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="<%= path === '/admin/add-user' ? 'active' : ''  %>">
+                    <a href="/admin/add-user">Adicionar Usuário</a>
+                </li>
+            </ul>
+        </nav>
+    </header>

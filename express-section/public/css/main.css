@@ -2,6 +2,19 @@ body {
     font-family: sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    width: 200px;
+}
+
+
 .active {
     background-color: blueviolet;
+}
+
+.active a {
+    color: aliceblue;
 }

@@ -1,37 +1,31 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<%- include('includes/head.ejs') %> 
+    <link rel="stylesheet" href="/css/shop.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= pageTitle %> </title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-
-<body>
-    <header>
-        <h1>Shop Express JS</h1>
-        <nav>
-            <ul><a href="/">Shop</a></ul>
-            <ul><a href="/admin/add-product">Adicionar Produto</a></ul>
-        </nav>
-    </header>
+<%- include('includes/navigation.ejs') %> 
     <main>
         <h2>Meus produtos</h2>
         <p>Lista de produtos</p>
 
         <% if (prods.length > 0) { %>
-        <ul>
-            <% for (let product of prods) { %> 
-            <li><%= product.productName %> </li>
-            <% } %> 
-        </ul>
+            <ul>
+                <% for (let product of prods) { %> 
+                    <li><%= product.productName %> </li>
+                <% } %> 
+            </ul>
         <% } else { %>
-         <p>Sem produtos para exibir</p>       
+            <p>Sem produtos para exibir</p>       
+        <% } %> 
+
+        <h2>Usuários</h2>
+        <p>Lista de Usuário</p>
+        <% if(users.length > 0) { %>
+            <ul>
+                <% for (let user of users) { %>
+                    <li><%= user.userName %> </li>    
+                <% } %> 
+            </ul>
+        <% } else { %>
+            <p>Sem usuário para exibir</p>
         <% } %> 
     </main>
-
-</body>
-
-</html>
+<%- include('includes/footer.ejs') %> 
